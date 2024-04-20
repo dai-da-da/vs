@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Welcome to dai-home</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="name" id="name">
+    </div>
+</body>
+<style>
+
+</style>
+<script>
+    var url = document.getElementById('name');
+    url.onchange = function () {
+        if (url.value == '设置')
+            url.style.background = 'blue';
+        else
+            url.style.background = 'red';
+
+    }
+</script>
+
+</html>
