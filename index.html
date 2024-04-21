@@ -15,10 +15,17 @@
 <script>
     var url = document.getElementById('name');
     url.onchange = function () {
-        if (url.value == '设置')
-            url.style.background = 'blue';
-        else
-            url.style.background = 'red';
+        switch (url.value) {
+            case '设置':
+                document.body.style.backgroundColor = 'blue';
+                break;
+            case '自定义':
+                break;
+            case '主题市场':
+                break;
+            default:
+                break;
+        }
 
     }
 </script>
